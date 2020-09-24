@@ -33,7 +33,6 @@ function addItemToShoppingList() {
     setDeleteButtonEven(id);
 }
 
-
 function setDeleteButtonEven(id) {
     let deletedButton = document.getElementById("button"+id);
     deletedButton.addEventListener("click", () =>{
@@ -46,8 +45,8 @@ function createListItemHtml(itemName,itemAmount, id) {
         ${itemName} - ${itemAmount}
         <button id="button{id}" type={"button"}>Delete Item</button>>
     </li>';
-
 }
+
 function getRandomInt (min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
