@@ -41,10 +41,10 @@ function setDeleteButtonEven(id) {
 }
 
 function createListItemHtml(itemName,itemAmount, id) {
-    return <Li id="item${id}">
+    return`<Li id="item${id}">
         ${itemName} - ${itemAmount}
         <button id="button{id}" type={"button"}>Delete Item</button>
-        </Li>;
+        </Li>`;
 }
 
 function getRandomInt (min, max) {
